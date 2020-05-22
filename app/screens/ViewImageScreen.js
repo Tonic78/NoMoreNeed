@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     resizeMode: "contain",
   },
   imageContainer: {
-    backgroundColor: "#000",
+    backgroundColor: colors.medium,
     flex: 1,
   },
 });
