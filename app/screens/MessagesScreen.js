@@ -12,19 +12,19 @@ const initialMessages = [
     id: 1,
     title: "Title 1",
     description: "Desc 1",
-    image: require("../assets/avatar.jpeg"),
+    image: require("../assets/batman.png"),
   },
   {
     id: 2,
     title: "Title 2",
     description: "Desc 2",
-    image: require("../assets/avatar.jpeg"),
+    image: require("../assets/batman.png"),
   },
   {
     id: 3,
     title: "Title 3",
     description: "Desc 3",
-    image: require("../assets/avatar.jpeg"),
+    image: require("../assets/batman.png"),
   },
 ];
 
@@ -61,7 +61,7 @@ function MessagesScreen() {
               id: 4,
               title: "Title 4",
               description: "Desc 4",
-              image: require("../assets/avatar.jpeg"),
+              image: require("../assets/batman.png"),
             },
           ]);
         }}
