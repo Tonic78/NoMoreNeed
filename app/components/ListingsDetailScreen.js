@@ -8,13 +8,13 @@ import ListItem from "./ListItem";
 function ListingsDetailScreen() {
   return (
     <View>
-      <Image style={styles.image} source={require("../assets/jacket.jpg")} />
+      <Image style={styles.image} source={require("../assets/batcape.jpeg")} />
       <View style={styles.detailsContainer}>
-        <AppText style={styles.title}>Red jacket for sale</AppText>
+        <AppText style={styles.title}>Black cape for sale</AppText>
         <AppText style={styles.price}>$100</AppText>
         <View style={styles.userContainer}>
           <ListItem
-            image={require("../assets/avatar.jpeg")}
+            image={require("../assets/batman.png")}
             title="Test Dummy"
             subTitle="4 Listings"
           />
