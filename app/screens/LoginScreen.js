@@ -36,7 +36,6 @@ function LoginScreen() {
           secureTextEntry={true}
         />
         <SubmitButton title="Login" />
-        )}
       </AppForm>
     </Screen>
   );
