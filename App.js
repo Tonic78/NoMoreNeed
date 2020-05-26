@@ -21,5 +21,5 @@ import ListingEditScreen from "./app/screens/ListingEditScreen";
 export default function App() {
   const [category, setCategory] = useState();
 
-  return <ListingEditScreen />;
+  return <MessagesScreen />;
 }
