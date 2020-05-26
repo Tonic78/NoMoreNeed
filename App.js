@@ -15,6 +15,7 @@ import ListingsScreen from "./app/screens/ListingsScreen";
 import AppTextInput from "./app/components/AppTextInput";
 import AppPicker from "./app/components/AppPicker";
 import LoginScreen from "./app/screens/LoginScreen";
+import SignUpScreen from "./app/screens/SignUpScreen";
 
 const categories = [
   { label: "Vehicles", value: 1 },
@@ -26,7 +27,7 @@ export default function App() {
   const [category, setCategory] = useState();
 
   return (
-    <LoginScreen />
+    <SignUpScreen />
     // <Screen>
     //   <AppPicker
     //     selectedItem={category}
