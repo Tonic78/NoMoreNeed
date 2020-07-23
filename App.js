@@ -19,7 +19,5 @@ import SignUpScreen from "./app/screens/SignUpScreen";
 import ListingEditScreen from "./app/screens/ListingEditScreen";
 
 export default function App() {
-  const [category, setCategory] = useState();
-
   return <ListingEditScreen />;
 }
