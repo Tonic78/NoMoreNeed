@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { StyleSheet, Text, View } from "react-native";
+
+import * as ImagePicker from "expo-image-picker";
 
 import WelcomeScreen from "./app/screens/WelcomeScreen";
 import ViewImageScreen from "./app/screens/ViewImageScreen";
@@ -19,5 +21,15 @@ import SignUpScreen from "./app/screens/SignUpScreen";
 import ListingEditScreen from "./app/screens/ListingEditScreen";
 
 export default function App() {
-  return <ListingEditScreen />;
+  const requestPermission = async () => {
+    const result = await ImagePicker.requestCameraRollPermissionsAsync();
+    if (!result.granted)
+      alert("You need to enable permission to access the library");
+  };
+
+  useEffect(() => {
+    requestPermission();
+  }, []);
+
+  return <Screen></Screen>;
 }
