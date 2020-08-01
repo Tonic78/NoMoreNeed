@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Image,
   View,
@@ -12,6 +12,16 @@ import * as ImagePicker from "expo-image-picker";
 import colors from "../config/colors";
 
 function ImageInput({ imageUri, onChangeImage }) {
+  useEffect(() => {
+    requestPermission();
+  }, []);
+
+  const requestPermission = async () => {
+    const result = await ImagePicker.requestCameraRollPermissionsAsync();
+    if (!result.granted)
+      alert("You need to enable permission to access the library");
+  };
+
   const handlePress = () => {
     if (!imageUri) selectImage();
     else

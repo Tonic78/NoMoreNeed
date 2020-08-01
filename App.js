@@ -24,16 +24,6 @@ import ImageInput from "./app/components/ImageInput";
 export default function App() {
   const [imageUri, setImageUri] = useState();
 
-  const requestPermission = async () => {
-    const result = await ImagePicker.requestCameraRollPermissionsAsync();
-    if (!result.granted)
-      alert("You need to enable permission to access the library");
-  };
-
-  useEffect(() => {
-    requestPermission();
-  }, []);
-
   return (
     <Screen>
       <ImageInput
