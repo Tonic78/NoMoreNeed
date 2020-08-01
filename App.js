@@ -19,6 +19,7 @@ import AppPicker from "./app/components/AppPicker";
 import LoginScreen from "./app/screens/LoginScreen";
 import SignUpScreen from "./app/screens/SignUpScreen";
 import ListingEditScreen from "./app/screens/ListingEditScreen";
+import ImageInput from "./app/components/ImageInput";
 
 export default function App() {
   const [imageUri, setImageUri] = useState();
@@ -46,6 +47,7 @@ export default function App() {
     <Screen>
       <Button title="Select Image" onPress={selectImage} />
       <Image source={{ uri: imageUri }} style={{ width: 200, height: 200 }} />
+      <ImageInput imageUri={imageUri} />
     </Screen>
   );
 }
