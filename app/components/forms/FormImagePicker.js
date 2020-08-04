@@ -22,7 +22,7 @@ function FormImagePicker({ name }) {
   return (
     <>
       <ImageInputList
-        imageUris={}
+        imageUris={imageUris}
         onAddImage={handleAdd}
         onRemoveImage={handleRemove}
       />
