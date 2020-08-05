@@ -24,9 +24,13 @@ import ListingEditScreen from "./app/screens/ListingEditScreen";
 import ImageInput from "./app/components/ImageInput";
 import ImageInputList from "./app/components/ImageInputList";
 
-const Tweets = () => (
+const Tweets = ({ navigation }) => (
   <Screen>
     <Text>Tweets</Text>
+    <Button
+      title="View Tweet"
+      onPress={() => navigation.navigate("Tweet Details")}
+    />
   </Screen>
 );
 
