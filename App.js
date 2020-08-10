@@ -24,6 +24,7 @@ import SignUpScreen from "./app/screens/SignUpScreen";
 import ListingEditScreen from "./app/screens/ListingEditScreen";
 import ImageInput from "./app/components/ImageInput";
 import ImageInputList from "./app/components/ImageInputList";
+import AuthNavigator from "./app/navigation/AuthNavigator";
 
 const Tweets = ({ navigation }) => (
   <Screen>
@@ -66,7 +67,7 @@ const TabNavigator = () => (
 export default function App() {
   return (
     <NavigationContainer>
-      <TabNavigator />
+      <AuthNavigator />
     </NavigationContainer>
   );
 }
