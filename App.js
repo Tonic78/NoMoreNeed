@@ -10,7 +10,7 @@ import WelcomeScreen from "./app/screens/WelcomeScreen";
 import ViewImageScreen from "./app/screens/ViewImageScreen";
 import AppButton from "./app/components/AppButton";
 import Card from "./app/components/Card";
-import ListingsDetailScreen from "./app/components/ListingsDetailScreen";
+import ListingsDetailScreen from "./app/screens/ListingsDetailScreen";
 import MessagesScreen from "./app/screens/MessagesScreen";
 import Screen from "./app/components/Screen";
 import Icon from "./app/components/Icon";
