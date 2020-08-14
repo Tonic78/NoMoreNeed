@@ -7,7 +7,7 @@ import Icon from "../components/Icon";
 import ListItemSeparator from "../components/ListItemSeparator";
 import colors from "../config/colors";
 
-function AccountScreen() {
+function AccountScreen({ navigation }) {
   return (
     <Screen style={styles.screen}>
       <View style={styles.container}>
@@ -33,6 +33,7 @@ function AccountScreen() {
           IconComponent={
             <Icon name="email" backgroundColor={colors.secondary} />
           }
+          onPress={() => navigation.navigate("Messages")}
         />
       </View>
       <ListItem
